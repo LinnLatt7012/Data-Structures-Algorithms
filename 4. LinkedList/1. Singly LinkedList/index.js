@@ -126,7 +126,7 @@ class LinkedList {
     console.log("----------", temp);
 
     if (temp) {
-      temp.value = value;
+      temp.head = value;
       return true;
     }
 
@@ -178,6 +178,7 @@ console.log(myLinkedList);
 myLinkedList.pop();
 console.log(myLinkedList);
 myLinkedList.push(8);
+myLinkedList.set(1,9);
 console.log(myLinkedList);
 myLinkedList.clear();
 console.log(myLinkedList);
