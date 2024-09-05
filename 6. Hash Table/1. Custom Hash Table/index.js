@@ -11,7 +11,7 @@ class HashTable {
       const charCode = key.charCodeAt(0) - 96;
       sum = (sum * PRIME_NUMBER + charCode) % this.keyMap.length;
     }
-
+    console.log(sum)
     return sum;
   }
 
@@ -66,3 +66,4 @@ phoneBook.set("michel", "111-666-222");
 console.log(phoneBook.get("jordan"));
 console.log(phoneBook.getAllValues());
 console.log(phoneBook.getAllKeys());
+console.log(phoneBook);
