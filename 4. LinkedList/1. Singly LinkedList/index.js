@@ -38,8 +38,6 @@ class LinkedList {
       prev = temp;
       temp = prev.next;
     }
-
-    // console.log(prev);
     this.tail = prev;
     this.tail.next = null;
     this.length--;
@@ -168,10 +166,18 @@ class LinkedList {
 
   clear() {
     this.head = null;
+    this.length=0;
+    this.tail=0;
   }
 }
 
 const myLinkedList = new LinkedList(1);
 myLinkedList.push(2);
 myLinkedList.push(3);
+console.log(myLinkedList);
+myLinkedList.pop();
+console.log(myLinkedList);
+myLinkedList.push(8);
+console.log(myLinkedList);
+myLinkedList.clear();
 console.log(myLinkedList);
